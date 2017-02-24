@@ -5,11 +5,13 @@
     <title></title>
   </head>
   <body>
-    <% @recipes.each do |recipe| %>
-    <p><%= "/recipes/#{recipe.id}/" %></p>
+
+    <% @recipes.each do  |recipe| %>
     <p><%= recipe.name %></p>
     <p><%= recipe.ingredients %></p>
     <p><%= recipe.cook_time %></p>
     <% end %>
+    <p><%= @recipe_name %> was deleted </p>
+
   </body>
 </html>
